@@ -18,6 +18,7 @@
 <body>
   <h1>HTML table basics</h1>
 
+  <h2>What is a table?</h2>
   <table>
     <caption>Math students</caption>
     <tr>
@@ -44,6 +45,7 @@
   
   <br><hr><br>
 
+  <h2>How does a table work?</h2>
   <table>
     <caption>Plantes data</caption>
 
@@ -122,6 +124,7 @@
 
   <br><hr><br>
 
+  <h2>Creating your 1st table</h2>
   <table>
     <caption>Exercise</caption>
     <tr>
@@ -142,6 +145,7 @@
 
   <br><hr><br>
 
+  <h2>Adding headers with &lt;th&gt; elements</h2>
   <table>
     <caption>Dogs table</caption>
     <tr>
@@ -276,36 +280,36 @@
   <table>
     <caption>How I chose to spend my money</caption>
     <thead>
-      <th>Purchase</th>
-      <th>Location</th>
-      <th>Date</th>
-      <th>Evaluation</th>
-      <th>Cost (&euro;)</th>
+      <th scope="col">Purchase</th>
+      <th scope="col">Location</th>
+      <th scope="col">Date</th>
+      <th scope="col">Evaluation</th>
+      <th scope="col">Cost (&euro;)</th>
     </thead>
     <tbody>
       <tr>
-        <td>Haircut</td>
+        <th scope="row">Haircut</td>
         <td>Hairdresser</td>
         <td>12/09</td>
         <td>Great idea</td>
         <td>30</td>
       </tr>
       <tr>
-        <td>Lasagna</td>
+        <th scope="row">Lasagna</td>
         <td>Restaurant</td>
         <td>12/09</td>
         <td>Regrets</td>
         <td>18</td>
       </tr>
       <tr>
-        <td>Shoes</td>
+        <th scope="row">Shoes</td>
         <td>Shoeshop</td>
         <td>13/09</td>
         <td>Big regrets</td>
         <td>65</td>
       </tr>
       <tr>
-        <td>Toothpaste</td>
+        <th scope="row">Toothpaste</td>
         <td>Supermarket</td>
         <td>13/09</td>
         <td>Good</td>
@@ -314,7 +318,7 @@
     </tbody>
     <tfoot>
       <tr>
-        <td colspan="4">SUM</td>
+        <th colspan="4" scope="row">SUM</th>
         <td>118</td>
       </tr>
     </tfoot>
@@ -322,7 +326,7 @@
 
   <br><hr><br>
 
-  <h2>Nesting Tables /not advised!/</h2>
+  <h2>Nesting tables /not advised!/</h2>
   <table>
     <tr>
       <th>title01</th>
@@ -349,5 +353,86 @@
     </tr>
   </table>
 
+  <br><hr><br>
+  
+  <h2>Tables for visually impaired users</h2>
 
+  <table>
+    <caption>Items Sold August 2016</caption>
+    
+    <thead>
+      <tr>
+        <th colspan="2" rowspan="2"></th>
+        <th colspan="3" scope="colgroup">Clothes</th>
+        <th colspan="2" scope="colgroup">Accessories</th>
+      </tr>
+      <tr>
+        <th scope="col">Trousers</th>
+        <th scope="col">Skirts</th>
+        <th scope="col">Dresses</th>
+        <th scope="col">Bracelets</th>
+        <th scope="col">Rings</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th rowspan="3" scope="colgroup">Belgium</th>
+        <th scope="row">Antwerp</th>
+        <td>56</td>
+        <td>22</td>
+        <td>43</td>
+        <td>72</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <th scope="row">Gent</th>
+        <td>46</td>
+        <td>18</td>
+        <td>50</td>
+        <td>61</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <th scope="row">Brussels</th>
+        <td>51</td>
+        <td>27</td>
+        <td>38</td>
+        <td>69</td>
+        <td>28</td>
+      </tr>
+      
+      <tr>
+        <th rowspan="2" scope="rowgroup">The Netherlands</th>
+        <th scope="row">Amsterdam</th>
+        <td>89</td>
+        <td>34</td>
+        <td>69</td>
+        <td>85</td>
+        <td>38</td>
+      </tr>
+      <tr>
+        <th scope="row">Utrecht</th>
+        <td>80</td>
+        <td>12</td>
+        <td>43</td>
+        <td>36</td>
+        <td>19</td>
+      </tr>
+    </tbody>
+    
+    <tfoot>
+      <tr>
+        <th colspan="2" scope="row">SUM</th>
+        <td>322</td>
+        <td>113</td>
+        <td>243</td>
+        <td>323</td>
+        <td>123</td>
+      </tr>
+    </tfoot>
+  </table>
+
+
+    
 </body>
