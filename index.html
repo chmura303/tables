@@ -16,7 +16,10 @@
 </head>
 
 <body>
+  <h1>HTML table basics</h1>
+
   <table>
+    <caption>Math students</caption>
     <tr>
       <th>Person</th>
       <th>Age</th>
@@ -38,10 +41,12 @@
       <td>47</td>
     </tr>
   </table>
+  
   <br><hr><br>
 
   <table>
-    
+    <caption>Plantes data</caption>
+
     <tr>
       <th colspan="2"></th>
       <th>Name</th>
@@ -71,7 +76,6 @@
       <td>6,792</td>
     </tr>
     
-
     <tr>
       <th rowspan="4">Jovian<br>planets</th>
       <th rowspan="2">Gas<br>giants</th>
@@ -114,12 +118,12 @@
       <td>no data</td>
       <td>no data</td>
     </tr>
-
-
   </table>
+
   <br><hr><br>
 
   <table>
+    <caption>Exercise</caption>
     <tr>
       <td>1ST-ROW-1st-cell</td>
       <td>2nd-cell</td>
@@ -135,11 +139,13 @@
       <td>5th-cell</td>
     </tr>
   </table>
+
   <br><hr><br>
 
   <table>
+    <caption>Dogs table</caption>
     <tr>
-      <th>*</th>
+      <th></th>
       <th>Knocky</th>
       <th>Floor</th>
       <th>Ella</th>
@@ -178,6 +184,7 @@
   <br><hr><br>
 
   <table>
+    <caption>Animals table</caption>
     <tr>
       <th colspan="2">Animals</th>
     </tr>
@@ -203,6 +210,144 @@
     </tr>
   </table>
 
+  <br><hr><hr>
+
+  <h1>HTML table advanced features and accessibility</h1>
+
+  <h2>Adding a caption to your table with &lt;caption&gt;</h2>
+  
+  <table>
+    <caption>School timetable</caption>
+    <tr>
+      <th></th>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+      <th>Sat</th>
+      <th>Sun</th>
+    </tr>
+    <tr>
+      <th>1st period</th>
+      <td>English</td>
+      <td></td>
+      <td></td>
+      <td>German</td>
+      <td>Dutch</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2nd period</th>
+      <td>English</td>
+      <td>English</td>
+      <td></td>
+      <td>German</td>
+      <td>Dutch</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3rd period</th>
+      <td></td>
+      <td>German</td>
+      <td></td>
+      <td>German</td>
+      <td>Dutch</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4th period</th>
+      <td></td>
+      <td>English</td>
+      <td></td>
+      <td>English</td>
+      <td>Dutch</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+
+  <br><hr><br>
+
+  <h2>Adding structure with &lt;thead&gt;, &lt;tbody&gt; and &lt;tfoot&gt;</h2>
+  <table>
+    <caption>How I chose to spend my money</caption>
+    <thead>
+      <th>Purchase</th>
+      <th>Location</th>
+      <th>Date</th>
+      <th>Evaluation</th>
+      <th>Cost (&euro;)</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Haircut</td>
+        <td>Hairdresser</td>
+        <td>12/09</td>
+        <td>Great idea</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>Lasagna</td>
+        <td>Restaurant</td>
+        <td>12/09</td>
+        <td>Regrets</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td>Shoes</td>
+        <td>Shoeshop</td>
+        <td>13/09</td>
+        <td>Big regrets</td>
+        <td>65</td>
+      </tr>
+      <tr>
+        <td>Toothpaste</td>
+        <td>Supermarket</td>
+        <td>13/09</td>
+        <td>Good</td>
+        <td>5</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">SUM</td>
+        <td>118</td>
+      </tr>
+    </tfoot>
+  </table>  
+
+  <br><hr><br>
+
+  <h2>Nesting Tables /not advised!/</h2>
+  <table>
+    <tr>
+      <th>title01</th>
+      <th>title02</th>
+      <th>title03</th>
+    </tr>
+    <tr>
+      <td id="nested">
+        <table id="table02">
+          <tr>
+            <td>cell01</td>
+            <td>cell02</td>
+            <td>cell03</td>
+          </tr>
+        </table>
+      </td>
+      <td>cell02</td>
+      <td>cell03</td>
+    </tr>
+    <tr>
+      <td>cell04</td>
+      <td>cell05</td>
+      <td>cell06</td>
+    </tr>
+  </table>
 
 
 </body>
